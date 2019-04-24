@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>{{ domain }}账号密码修改</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<!--===============================================================================================-->
+</head>
+<body>
+
+<div class="limiter">
+	<div class="container-login100">
+		<div class="wrap-login100">
+			<form class="login100-form validate-form" action="." method="post">
+					<span class="login100-form-title p-b-16">
+						登陆后修改密码
+					</span>
+				<span class="login100-form-title p-b-16">
+						<img src="static/favicon.ico" alt="">
+					</span>
+
+				<div id="warn" class="alert alert-warning" style="display:none" >
+					<a href="#" class="close" data-dismiss="alert">
+						&times;
+					</a>
+					<center><span>5秒后自动关闭</span></center>
+					<span id="warn-info"></span><br>
+				</div>
+
+
+				<div id="pemail" class="wrap-input100 validate-input" data-validate = "请输入正确用户名">
+					<input class="input100" type="text" name="email" style="width:50%">
+					<span class="focus-input100" data-placeholder="域账号"></span>
+					<span style="position:absolute;left:50%;bottom:0px;font-size:20px;">@{{ domain }}</span>
+				</div>
+
+				<div id="ppass" class="wrap-input100 validate-input" data-validate="请输入正确密码">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+					<input class="input100" type="password" name="pass">
+					<span class="focus-input100" data-placeholder="密码"></span>
+				</div>
+
+
+				<!--<div id="pcode" class="wrap-input100 validate-input" data-validate="请输入正确验证码" style="width:50%">-->
+					<!--<input class="input100" name="code">-->
+					<!--<span class="focus-input100" data-placeholder="验证码"></span>-->
+					<!--<img id="pic" style="position:absolute;left:115%;bottom:0px;height:100%;" src="static/1.jpg">-->
+				<!--</div>-->
+
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button id="btn" class="login100-form-btn">
+							验证原始密码
+						</button>
+					</div>
+				</div>
+
+				<div class="text-center p-t-32">
+						<span class="txt1">
+							@2018 {{ domain }} All rights reserved
+						</span>
+
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="static/vendor/bootstrap/js/popper.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="static/js/login.js"></script>
+
+</body>
+</html>
