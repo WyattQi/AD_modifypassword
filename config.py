@@ -3,7 +3,7 @@
 
 
 class ADConfig(object):
-    server = '192.168.241.141'
+    server = ''
     baseDN = 'dc=test,dc=com'
     adminDN = 'administrator'
     adminPWD = 'Aa123456'
